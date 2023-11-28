@@ -1,0 +1,4 @@
+from_model: runs/Scalable_COCOTraffic/Linear_Comb/modelc4/pretrain_Det_E2/weights/best.pt
+from_model_cfg : models/custom_models/Scalable/Linear_Comb/D4_res1b/model_c4/pretrain_woComp/yolo_direct_c4e2.yaml
+weight_transfer_order : [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26]
+freeze_layers : [0,1,2,3,4,5,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26]

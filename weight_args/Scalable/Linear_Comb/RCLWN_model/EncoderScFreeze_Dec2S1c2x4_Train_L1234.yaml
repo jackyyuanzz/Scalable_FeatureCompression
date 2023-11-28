@@ -1,0 +1,4 @@
+from_model: runs/Scalable_COCOTraffic/Linear_Comb/modelc8S2mix2_SiLU/Dec2_S1c2x4_Transfered/weights/model_weights.pt
+from_model_cfg : models/custom_models/Scalable/Linear_Comb/D4_res1b/model_SplitDecoder/yolo_direct_decoder2.yaml
+weight_transfer_order : [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27]
+freeze_layers : [0,1,2,3,4,5,6]

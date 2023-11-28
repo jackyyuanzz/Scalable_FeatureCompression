@@ -1,0 +1,1 @@
+from_model: /scratch/zy740/Analytics_Compression/yolo/yolov5/runs/train_yolodirect/yolo_variant/yolo_res1b_Pretrain/weights/best.pt

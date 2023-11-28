@@ -1,0 +1,4 @@
+from_model: /scratch/zy740/Analytics_Compression/yolo/yolov5/runs/Scalable_COCOTraffic/Base/backboneAll_C16_l1e-1/weights/best.pt
+from_model_cfg : /scratch/zy740/Analytics_Compression/yolo/yolov5/models/custom_models/Scalable/Base/yolov1_base_C16.yaml
+weight_transfer_order : [0,1,2,3,4,5,6,null,null,7,8,9,10,11,12,13,null,null,null,null,null,null,null,null,null,15]
+freeze_layers : [0,1,2,3,4,5,6,9,10,11,12,13,14,15,25]

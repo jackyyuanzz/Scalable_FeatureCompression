@@ -1,0 +1,28 @@
+# parameters
+nc: 80  # number of classes
+depth_multiple: 1  # model depth multiple
+width_multiple: 1  # layer channel multiple
+
+# anchors
+anchors:
+  - [10,13, 16,30, 33,23]  # P3/8
+  - [30,61, 62,45, 59,119]  # P4/16
+  - [116,90, 156,198, 373,326]  # P5/32
+
+# YOLOv5 backbone
+backbone:
+  # [from, number, module, args]
+  [
+   [-1, 1, Conv, [8, 3, 2]],  # 1-P2/4
+   [-1, 1, Conv, [24, 3, 1]],  # 1-P2/4
+   [-1, 1, nn.Upsample, [None, 2, 'nearest']],
+   [-1, 1, Conv, [32, 3, 2]],  # 1-P2/4
+  ]
+
+head:
+  [
+   [-1, 1, Conv, [32, 3, 1]],  # 1-P2/4
+   [-1, 1, Conv, [32, 3, 2]],  # 1-P2/4
+   [-1, 1, nn.Upsample, [None, 2, 'nearest']],
+   [[3, -1], 1, Concat, [1]],  # cat backbone P4
+  ]

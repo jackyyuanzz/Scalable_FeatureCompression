@@ -1,0 +1,11 @@
+from_model_enc: runs/Scalable_COCOTraffic/Linear_Comb/RCLWN_model/Multiple_decoders_simul/EncDec_initFromSimTrain_c1S2x8c2x4/weights/model_weights_combined.pt
+from_model_cfg_enc : models/custom_models/Scalable/Linear_Comb/RCLWN_model/Multiple_decoders/yolo_direct_c1S2x8c2x4full_comp_encoder.yaml
+weight_transfer_order_enc : [0,1,2,3,4,5,6,7,8]
+
+from_model_dec_high: runs/Scalable_COCOTraffic/Linear_Comb/RCLWN_model/Multiple_decoders_simul/EncDec_initFromSimTrain_c1S2x8c2x4/weights/model_weights_combined.pt
+from_model_cfg_dec_high : models/custom_models/Scalable/Linear_Comb/RCLWN_model/Multiple_decoders/yolo_direct_c1S2x8full_comp_decoder.yaml
+weight_transfer_order_dec_high : [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18]
+
+from_model_dec_low: runs/Scalable_COCOTraffic/Linear_Comb/RCLWN_model/Multiple_decoders_simul/EncDec_initFromSimTrain_c1S2x8c2x4/weights/model_weights_combined.pt
+from_model_cfg_dec_low : models/custom_models/Scalable/Linear_Comb/RCLWN_model/Multiple_decoders/yolo_direct_c1S2x8full_comp_decoder.yaml
+weight_transfer_order_dec_low : [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18]
